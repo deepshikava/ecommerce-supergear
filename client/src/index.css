@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-whiteText: #ffffff;
+  --color-darkText: #000000;
+  --color-lightText: #9b9b9b;
+  --color-greenText: #1d8221;
+  --color-redText: #e02b2b;
+  --color-skyText: #32bde8;
+
+  /* Flex */
+  --flex-full: 0 0 100%;
+}
+
+/* Plugins (CSS-first import) */
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";
