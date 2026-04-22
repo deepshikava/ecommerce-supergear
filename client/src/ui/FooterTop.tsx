@@ -38,7 +38,6 @@ const FooterTop = () => {
         </div>
         <div className="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-8 sm:max-w-none lg:grid-cols-3">
           {incentives.map((incentive) => {
-            const IconComponent = incentive.icon;
             return (
               <div
                 key={incentive.name}
@@ -46,7 +45,7 @@ const FooterTop = () => {
               >
                 <div className="sm:flex-shrink-0">
                   <div className="flex-root">
-                    <IconComponent className="mx-auto h-16 w-16" />
+                    <incentive.icon className="mx-auto h-16 w-16" />
                   </div>
                 </div>
                 <div className="mt-3 sm:ml-6 lg:ml-0">
